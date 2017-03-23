@@ -7,7 +7,8 @@
 
 .custom-select__select {
   background-color: #c0392b;
-  padding: 8px 15px;
+  padding: 0 20px 0 10px;
+  line-height: 40px;
 }
 
 .custom-select__select::after {

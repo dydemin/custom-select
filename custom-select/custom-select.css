@@ -21,7 +21,8 @@
   bottom: 0;
   left: 0;
   background-color: #c0392b;
-  padding: 8px 15px;
+  padding: 0 20px 0 10px;
+  line-height: 40px;
   transition: all 0.2s ease-in;
 }
 
@@ -64,8 +65,7 @@
 
 .custom-select__option {
   margin: 0;
-  padding: 12px 0;
-  text-indent: 15px;
+  padding: 12px 15px;
   border-top: 1px solid #962d22;
   transition: all 0.15s ease-in;
 }
