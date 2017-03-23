@@ -1,0 +1,46 @@
+.custom-select {
+  font-size: 16px;
+  color: #fff;
+  width: 220px;
+  height: 40px;
+}
+
+.custom-select__select {
+  background-color: #c0392b;
+  padding: 8px 15px;
+}
+
+.custom-select__select::after {
+  border-width: 7px;
+  border-top-color: #fff;
+  top: 16px;
+  right: 10px;
+}
+
+.custom-select__select:hover {
+  background-color: #b83729;
+}
+
+.custom-select__select_active {
+  background-color: #ab3326;
+}
+
+.custom-select__select_active::after {
+  top: 9px;
+  border-top-color: transparent;
+  border-bottom-color: #fff;
+}
+
+.custom-select__options {
+  background-color: #ab3326;
+}
+
+.custom-select__option {
+  padding: 12px 15px;
+  border-top: 1px solid #962d22;
+}
+
+.custom-select__option:hover {
+  color: #c0392b;
+  background-color: #fff;
+}
