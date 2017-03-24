@@ -1,0 +1,21 @@
+{
+  "name": "custom-select",
+  "version": "0.0.1",
+  "description": "Custom select box plugin.",
+  "author": "Dmitriy Dyomin <dydemin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node_modules/.bin/gulp"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^6.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1"
+  }
+}

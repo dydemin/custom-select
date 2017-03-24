@@ -1,0 +1,52 @@
+/*
+ * Размеры и позиционирование
+ */
+
+// Ширина и высота стилизованного контрола
+$cs-width: 220px !default;
+$cs-height: 40px !default;
+
+// Размер каретки октрытия выпадающего меню
+$cs-caret-size: 14px !default;  // Разме
+
+// Внутренние отступы контрола
+// Правый отступ высчитывается из размеров каретки и заданного оступа
+$cs-select-ver-padding: 0 !default;
+$cs-select-hor-padding: 10px !default;
+$cs-select-padding: $cs-select-ver-padding $cs-select-hor-padding*2+$cs-caret-size $cs-select-ver-padding $cs-select-hor-padding !default;
+
+// Положение катерки октрытия выпадающего меню
+$cs-caret-top: $cs-height / 2 - $cs-caret-size / 2 + $cs-caret-size / 4 !default;
+$cs-caret-right: $cs-select-hor-padding !default;
+
+// Внутренние отступы элементов списка выбора
+$cs-option-ver-padding: 12px !default;
+$cs-option-hor-padding: 15px !default;
+$cs-option-padding: $cs-option-ver-padding $cs-option-hor-padding !default;
+
+/*
+ * Типографика
+ */
+$cs-font-size: 16px !default;
+
+/*
+ * Цвета
+ */
+
+// Базовые цвета фона и содержимого
+$cs-fg-color: #ffffff !default;
+$cs-bg-color: #c0392b !default;
+
+// Цвет фона выпадающего меню при наведении
+$cs-select-bg-hover-color: darken($cs-bg-color, 2) !default;
+// Цвет фона выпадающего меню при октрытии
+$cs-select-bg-active-color: darken($cs-bg-color, 5) !default;
+
+// Цвет фона элементов списка выбора
+$cs-options-bg-color: $cs-select-bg-active-color !default;
+
+// Цвет каретки
+$cs-caret-color: $cs-fg-color !default;
+
+// Цвет разделителей элементов списка выбора
+$cs-option-separator-color: darken($cs-bg-color, 10) !default;

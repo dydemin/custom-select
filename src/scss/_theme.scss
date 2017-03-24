@@ -1,0 +1,59 @@
+@import "../../bower_components/sass-em/em";
+
+// Блок выпадающего списка
+.custom-select {
+  width: em($cs-width, $cs-font-size);
+  height: em($cs-height, $cs-font-size);
+  font-size: $cs-font-size;
+  color: $cs-fg-color;
+
+  // Блок стилизованного выпадающего списка
+  &__select {
+    padding: em($cs-select-padding, $cs-font-size);
+    line-height: em($cs-height, $cs-font-size);
+    background-color: $cs-bg-color;
+
+    // Открытое состояние выпадающего списка
+    &.custom-select__select_active {
+      background-color: $cs-select-bg-active-color;
+
+      // Каретка выпадающего списка в открытом состоянии
+      &::after {
+        top: auto;
+        bottom: em($cs-caret-top, $cs-font-size);
+        border-top-color: transparent;
+        border-bottom-color: $cs-caret-color;
+      }
+    }
+
+    // Выпадающий список при наведении
+    &:hover {
+      background-color: $cs-select-bg-hover-color;
+    }
+
+    // Каретка выпадающего списка
+    &::after {
+      top: em($cs-caret-top, $cs-font-size);
+      right: em($cs-caret-right, $cs-font-size);
+      border-width: em($cs-caret-size / 2, $cs-font-size);
+      border-top-color: $cs-caret-color;
+    }
+  }
+
+  // Список опций выпадающего списка
+  &__options {
+    background-color: $cs-options-bg-color;
+  }
+
+  // Элемент списка опций выпадающего списка
+  &__option {
+    padding: em($cs-option-padding, $cs-font-size);
+    border-top: 1px solid $cs-option-separator-color;
+
+    // Элемент списка опций выпадающего списка при наведении
+    &:hover {
+      color: $cs-bg-color;
+      background-color: $cs-fg-color;
+    }
+  }
+}

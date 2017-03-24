@@ -1,0 +1,18 @@
+{
+  "name": "custom-select",
+  "description": "Custom select box plugin.",
+  "authors": [
+    "Dmitriy Dyomin <dydemin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "sass-em": "^1.0.2"
+  }
+}

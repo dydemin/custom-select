@@ -1,0 +1,50 @@
+// Блок выпадающего списка
+.custom-select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  // Исходный контрол выпадающего списка
+  &__control {
+    display: none;
+    visibility: hidden;
+  }
+
+  // Блок стилизованного выпадающего списка
+  &__select {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in;
+
+    // Каретка открытия блока выпадающего списка
+    &::after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: transparent;
+      content: '';
+    }
+  }
+
+  // Список опций выпадающего списка
+  &__options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  // Элемент списка опций выпадающего списка
+  &__option {
+    transition: all 0.15s ease-in;
+  }
+}
