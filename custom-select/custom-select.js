@@ -167,7 +167,7 @@
     this.styledSelect.addEventListener('click', function(event) {
       event.stopPropagation();
 
-      Array.prototype.forEach.call(document.querySelectorAll('.' + obj.options.base + ' .' + obj.options.classes.select + '.' + obj.options.classes.active), function(element) {
+      Array.prototype.forEach.call(document.querySelectorAll('.' + obj.options.classes.base + ' .' + obj.options.classes.select + '.' + obj.options.classes.active), function(element) {
         if (obj.styledSelect !== element) {
           element.classList.remove(obj.options.classes.active);
         }
