@@ -13,28 +13,28 @@
 /*
  * Цвета
  */
-.custom-select {
+.cs {
   position: relative;
   display: inline-block;
   cursor: pointer; }
-  .custom-select__control {
+  .cs__control {
     display: none;
     visibility: hidden; }
-  .custom-select__select {
+  .cs__select {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     transition: all 0.2s ease-in; }
-    .custom-select__select::after {
+    .cs__select::after {
       position: absolute;
       width: 0;
       height: 0;
       border-style: solid;
       border-color: transparent;
       content: ''; }
-  .custom-select__options {
+  .cs__options {
     position: absolute;
     top: 100%;
     right: 0;
@@ -44,38 +44,38 @@
     margin: 0;
     padding: 0;
     list-style: none; }
-  .custom-select__option {
+  .cs__option {
     transition: all 0.15s ease-in; }
 
-.custom-select {
+.cs {
   width: 13.75em;
   height: 2.5em;
   font-size: 16px;
   color: #ffffff; }
-  .custom-select__select {
+  .cs__select {
     padding: 0 2.125em 0 0.625em;
     line-height: 2.5em;
     background-color: #c0392b; }
-    .custom-select__select.custom-select__select_active {
+    .cs__select.cs__select_active {
       background-color: #ab3326; }
-      .custom-select__select.custom-select__select_active::after {
+      .cs__select.cs__select_active::after {
         top: auto;
         bottom: 1.03125em;
         border-top-color: transparent;
         border-bottom-color: #ffffff; }
-    .custom-select__select:hover {
+    .cs__select:hover {
       background-color: #b83729; }
-    .custom-select__select::after {
+    .cs__select::after {
       top: 1.03125em;
       right: 0.625em;
       border-width: 0.4375em;
       border-top-color: #ffffff; }
-  .custom-select__options {
+  .cs__options {
     background-color: #ab3326; }
-  .custom-select__option {
+  .cs__option {
     padding: 0.75em 0.9375em;
     border-top: 1px solid #962d22; }
-    .custom-select__option:hover {
+    .cs__option:hover {
       color: #c0392b;
       background-color: #ffffff; }
 

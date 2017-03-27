@@ -20,7 +20,7 @@
       <option value="option5">Option 5</option>
     </select><!-- /.custom-select -->
 
-    <select name="options2" id="options2" class="custom-select">
+    <select name="options2" id="options2">
       <option value="" disabled selected>--Placeholder--</option>
       <option value="option1">Option 1</option>
       <option value="option2">Option 2</option>
@@ -30,6 +30,18 @@
     </select><!-- /.custom-select -->
   </form>
 
-  <script src="../custom-select/custom-select.js"></script>
+  <script src="../dist/custom-select.min.js"></script>
+  <script>
+    CustomSelect.create(document.getElementById('options2'), {
+      customClasses: {
+        active: 'cc_active',
+        base: 'cc',
+        control: 'cc__control',
+        option: 'cc__item',
+        options: 'cc__options',
+        select: 'cc__select'
+      }
+    });
+  </script>
 </body>
 </html>

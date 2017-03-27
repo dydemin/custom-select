@@ -13,35 +13,35 @@
 /*
  * Цвета
  */
-.custom-select {
+.cs {
   width: 13.75em;
   height: 2.5em;
   font-size: 16px;
   color: #ffffff; }
-  .custom-select__select {
+  .cs__select {
     padding: 0 2.125em 0 0.625em;
     line-height: 2.5em;
     background-color: #c0392b; }
-    .custom-select__select.custom-select__select_active {
+    .cs__select.cs__select_active {
       background-color: #ab3326; }
-      .custom-select__select.custom-select__select_active::after {
+      .cs__select.cs__select_active::after {
         top: auto;
         bottom: 1.03125em;
         border-top-color: transparent;
         border-bottom-color: #ffffff; }
-    .custom-select__select:hover {
+    .cs__select:hover {
       background-color: #b83729; }
-    .custom-select__select::after {
+    .cs__select::after {
       top: 1.03125em;
       right: 0.625em;
       border-width: 0.4375em;
       border-top-color: #ffffff; }
-  .custom-select__options {
+  .cs__options {
     background-color: #ab3326; }
-  .custom-select__option {
+  .cs__option {
     padding: 0.75em 0.9375em;
     border-top: 1px solid #962d22; }
-    .custom-select__option:hover {
+    .cs__option:hover {
       color: #c0392b;
       background-color: #ffffff; }
 

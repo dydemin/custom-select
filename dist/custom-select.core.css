@@ -3,28 +3,28 @@
  * Copyright 2017 dydemin <dydemin@gmail.com>
  * Licensed under MIT (https://github.com/dydemin/expanding-search-bar/blob/master/LICENSE)
  */
-.custom-select {
+.cs {
   position: relative;
   display: inline-block;
   cursor: pointer; }
-  .custom-select__control {
+  .cs__control {
     display: none;
     visibility: hidden; }
-  .custom-select__select {
+  .cs__select {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     transition: all 0.2s ease-in; }
-    .custom-select__select::after {
+    .cs__select::after {
       position: absolute;
       width: 0;
       height: 0;
       border-style: solid;
       border-color: transparent;
       content: ''; }
-  .custom-select__options {
+  .cs__options {
     position: absolute;
     top: 100%;
     right: 0;
@@ -34,7 +34,7 @@
     margin: 0;
     padding: 0;
     list-style: none; }
-  .custom-select__option {
+  .cs__option {
     transition: all 0.15s ease-in; }
 
 /*# sourceMappingURL=custom-select.core.css.map */

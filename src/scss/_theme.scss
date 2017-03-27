@@ -1,7 +1,7 @@
 @import "../../bower_components/sass-em/em";
 
 // Блок выпадающего списка
-.custom-select {
+.cs {
   width: em($cs-width, $cs-font-size);
   height: em($cs-height, $cs-font-size);
   font-size: $cs-font-size;
@@ -14,7 +14,7 @@
     background-color: $cs-bg-color;
 
     // Открытое состояние выпадающего списка
-    &.custom-select__select_active {
+    &.cs__select_active {
       background-color: $cs-select-bg-active-color;
 
       // Каретка выпадающего списка в открытом состоянии
