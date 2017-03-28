@@ -33,23 +33,23 @@ bower install https://github.com/dydemin/custom-select.git#master
 Подключить стили в шапке страницы:
 
 ```html
-&lt;link rel=&quot;stylesheet&quot; href=&quot;custom-select/dist/custom-select.min.css&quot;&gt;
+<link rel="stylesheet" href="custom-select/dist/custom-select.min.css">
 ```
 
 Подключить скрипт плагина:
 
 ```html
-&lt;script src=&quot;custom-select/dist/custom-select.min.js&quot;&gt;&lt;/script&gt;
+<script src="custom-select/dist/custom-select.min.js"></script>
 ````
 
 Добавьте в документ элемент выпадающего списка с классом `custom-select`:
 
 ```html
-&lt;select id=&quot;options&quot; name=&quot;options&quot; class=&quot;custom-select&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;&quot; selected disabled&gt;-- Placeholder --&lt;/option&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;option1&quot;&gt;Option 1&lt;/option&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&hellip;
-&lt;/select&gt;
+<select id="options" name="options" class="custom-select">
+    <option value="" selected disabled>-- Placeholder --</option>
+    <option value="option1">Option 1</option>
+    …
+</select>
 ```
 
 Плагин автоматически инициализируется для всех полей выпадающего списка с 
@@ -63,22 +63,22 @@ bower install https://github.com/dydemin/custom-select.git#master
 При этом будет сгенерирована следующая разметка:
 
 ```html
-&lt;div class=&quot;cs&quot;&gt;&lt;!-- Контейнер, содержащий всю сгенерированную разметку --&gt;
-&nbsp;&bbsp;&nbsp;&nbsp;&lt;!-- Искомый элемент выпадающего списка --&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;select id=&quot;options&quot; name=&quot;options&quot; class=&quot;custom-select cs__control&quot; style=&quot;display: none;&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;&quot; selected disabled&gt;-- Placeholder --&lt;/option&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value=&quot;option1&quot;&gt;Option 1&lt;/option&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&hellip;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;&lt;!-- /.cs__control --&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Блок поля списка выбора, показывает выбранный элемент списка или плейсхолдер,а также отвечает за отображение &lsquo;стрелки&rsquo; --&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;cs__select&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Placeholder --
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&lt;!-- /.cs__select --&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;cs__options&quot;&gt;&lt;!-- Список опций выбора --&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class=&quot;cs__option&quot; data-target=&quot;option1&quot;&gt;Option 1&lt;/li&gt;&lt;!-- Каждая опция с непустым value, искомое value помещается в data-target --&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&hellip;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;&lt;!-- /.cs__options --&gt;
-&lt;/div&gt;&lt;!-- /.cs --&gt;
+<div class="cs"><!-- Контейнер, содержащий всю сгенерированную разметку -->
+ &bbsp;  <!-- Искомый элемент выпадающего списка -->
+    <select id="options" name="options" class="custom-select cs__control" style="display: none;">
+        <option value="" selected disabled>-- Placeholder --</option>
+        <option value="option1">Option 1</option>
+        …
+    </select><!-- /.cs__control -->
+    <!-- Блок поля списка выбора, показывает выбранный элемент списка или плейсхолдер,а также отвечает за отображение &lsquo;стрелки&rsquo; -->
+    <div class="cs__select">
+        -- Placeholder --
+    </div><!-- /.cs__select -->
+    <ul class="cs__options"><!-- Список опций выбора -->
+        <li class="cs__option" data-target="option1">Option 1</li><!-- Каждая опция с непустым value, искомое value помещается в data-target -->
+        …
+    </ul><!-- /.cs__options -->
+</div><!-- /.cs -->
 ```
 
 В каталоке `dist` содержаться как минимизированные, так и не сжатые версии 
