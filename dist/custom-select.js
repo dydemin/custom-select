@@ -639,11 +639,18 @@
       if ('string' === typeof this._options.placeholder) {
         this._selectBox.innerText = this._options.placeholder;
       } else {
-        var placeholderItem = Helpers.getChildren(this._control).find(
-          function(child) {
-            return !child.getAttribute('value');
+        var placeholderItem = null;
+        for (var i =0, items = Helpers.getChildren(this._control); i < items.length; i++) {
+          if (!items[i].getAttribute('value')) {
+            placeholderItem = items[i];
+            break;
           }
-        );
+        }
+        // var placeholderItem = Helpers.getChildren(this._control).find(
+        //   function(child) {
+        //     return !child.getAttribute('value');
+        //   }
+        // );
 
         if (null !== placeholderItem) {
           this._selectBox.innerText = placeholderItem.innerText || '';
