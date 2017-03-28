@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Select Demo</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/custom-select.min.css">
+</head>
+<body>
+  <h1>Custom Select Demo</h1>
+
+  <form action="#" method="GET">
+    <select name="options1" id="options1" class="custom-select">
+      <option value="" disabled selected>--Placeholder--</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      <option value="option4">Option 4</option>
+      <option value="option5">Option 5</option>
+    </select><!-- /.custom-select -->
+
+    <select name="options2" id="options2">
+      <option value="" disabled selected>--Placeholder--</option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      <option value="option4">Option 4</option>
+      <option value="option5">Option 5</option>
+    </select><!-- /.custom-select -->
+  </form>
+
+  <script src="assets/custom-select.min.js"></script>
+  <script>
+    CustomSelect.create(document.getElementById('options2'), {
+      customClasses: {
+        active: 'cc_active',
+        base: 'cc',
+        control: 'cc__control',
+        option: 'cc__item',
+        options: 'cc__options',
+        select: 'cc__select'
+      }
+    });
+  </script>
+</body>
+</html>
