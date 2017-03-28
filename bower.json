@@ -5,6 +5,12 @@
     "Dmitriy Dyomin <dydemin@gmail.com>"
   ],
   "license": "MIT",
+  "keywords": [
+    "plugin",
+    "select",
+    "customize"
+  ],
+  "homepage": "https://github.com/dydemin/custom-select",
   "ignore": [
     "**/.*",
     "node_modules",
