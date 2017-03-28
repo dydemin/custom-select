@@ -340,11 +340,18 @@
    * @return this
    */
   CustomSelect.prototype.select = function(value, title) {
-    var item = this._items.find(function(item) {
-      return item.title === title && item.value === value;
-    });
+    var item = null;
+    for (var i = 0; i < this._items.length; i++) {
+      if (this._items[i].title === title && this._items[i].value === value) {
+        item = this._items[i];
+        break;
+      }
+    }
+    // var item = this._items.find(function(item) {
+    //   return item.title === title && item.value === value;
+    // });
 
-    if (undefined !== item && (null === this._selected
+    if (null !== item && (null === this._selected
         || (this._selected && this._selected.value !== value
         && this._selected.title !== title)))
     {
@@ -639,11 +646,15 @@
       if ('string' === typeof this._options.placeholder) {
         this._selectBox.innerText = this._options.placeholder;
       } else {
-        var placeholderItem = Helpers.getChildren(this._control).find(
-          function(child) {
-            return !child.getAttribute('value');
+        var placeholderItem = null;
+        for (var i =0, items = Helpers.getChildren(this._control);
+            i < items.length; i++)
+        {
+          if (!items[i].getAttribute('value')) {
+            placeholderItem = items[i];
+            break;
           }
-        );
+        }
 
         if (null !== placeholderItem) {
           this._selectBox.innerText = placeholderItem.innerText || '';
