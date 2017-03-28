@@ -349,7 +349,7 @@
         Helpers.addClass(visibleItem, DEFAULT_CLASSES[ClassTypes.option]);
         this._addCustomClasses(visibleItem, ClassTypes.option);
         visibleItem.innerText = title;
-        visibleItem.dataset.target = value;
+        visibleItem.setAttribute('data-target', value);
 
         items.push({
           value: value,
@@ -425,7 +425,10 @@
       ev.stopPropagation();
 
       var clickedItem = ev.target;
-      obj.select(clickedItem.dataset.target, clickedItem.innerText)
+      obj.select(
+            clickedItem.getAttribute('data-target'),
+            clickedItem.innerText
+          )
          .close();
     });
 
