@@ -133,7 +133,8 @@
    * @param string className Название класса, добавляемое элементу.
    */
   exports.addClass = function(element, className) {
-    element.classList.add(className);
+    // element.classList.add(className);
+    element.className += ' ' + className;
   };
 
   /**
@@ -143,7 +144,7 @@
    * @param string className Название класса, удаляемое у элемента.
    */
   exports.removeClass = function(element, className) {
-    element.classList.remove(className);
+    element.className = element.className.replace(' ' + className, '');
   };
 
   /**
@@ -155,7 +156,7 @@
    * возвращается true, иначе - false.
    */
   exports.hasClass = function(element, className) {
-    return element.classList.contains(className);
+    return element.className.indexOf(className) !== -1;
   };
 
   /**
