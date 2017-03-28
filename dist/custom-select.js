@@ -614,7 +614,7 @@
     this._optionsList.addEventListener('click', function(ev) {
       ev.stopPropagation();
 
-      var clickedItem = ev.originalTarget;
+      var clickedItem = ev.target;
       obj.select(clickedItem.dataset.target, clickedItem.innerText)
          .close();
     });
