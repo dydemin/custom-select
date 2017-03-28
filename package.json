@@ -4,6 +4,19 @@
   "description": "Custom select box plugin.",
   "author": "Dmitriy Dyomin <dydemin@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dydemin/custom-select.git"
+  },
+  "keywords": [
+    "plugin",
+    "select",
+    "customize"
+  ],
+  "bugs": {
+    "url": "https://github.com/dydemin/custom-select/issues"
+  },
+  "homepage": "https://github.com/dydemin/custom-select",
   "scripts": {
     "build": "node_modules/.bin/gulp"
   },
