@@ -399,22 +399,26 @@
       + ' .' + DEFAULT_CLASSES.select
       + '.' + DEFAULT_CLASSES.active;
 
-    Helpers.queryElements(activeSelectBoxSelector).forEach(function(element) {
-      if (this._selectBox !== element) {
-        Helpers.removeClass(element, DEFAULT_CLASSES[ClassTypes.active]);
-        this._removeCustomClasses(element, ClassTypes.active);
+    for (var i = 0, elements = Helpers.queryElements(activeSelectBoxSelector);
+        i < elements.length; i++)
+    {
+      if (this._selectBox !== elements[i]) {
+        Helpers.removeClass(elements[i], DEFAULT_CLASSES[ClassTypes.active]);
+        this._removeCustomClasses(elements[i], ClassTypes.active);
       }
-    }, this);
+    }
 
     // Найти и скрыть другие списки элементов выбора
     var optionsListSelector = '.' + DEFAULT_CLASSES.base
       + ' .' + DEFAULT_CLASSES.options;
 
-    Helpers.queryElements(optionsListSelector).forEach(function(element) {
-      if (this._optionsList !== element) {
-        Helpers.hide(element);
+    for (var i = 0, elements = Helpers.queryElements(optionsListSelector);
+        i < elements.length; i++)
+    {
+      if (this._optionsList !== elements[i]) {
+        Helpers.hide(elements[i]);
       }
-    }, this);
+    }
 
     return this;
   };
