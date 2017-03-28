@@ -1,6 +1,6 @@
 # Custom Select
 
-[![GitHub tag](https://img.shields.io/badge/tag-v0.0.1-brightgreen.svg?style=flat)](https://github.com/dydemin/custom-select/tree/v0.0.1)
+[![GitHub tag](https://img.shields.io/badge/tag-v0.0.1-brightgreen.svg?style=flat)](https://github.com/dydemin/custom-select/tree/v0.0.2)
 [![license](https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat)](https://github.com/dydemin/custom-select/blob/master/LICENSE)
 [![demo](https://img.shields.io/badge/Демо-тут-lightgrey.svg?style=flat)](https://dydemin.github.io/custom-select/)
 
