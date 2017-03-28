@@ -725,9 +725,11 @@
 
   var initialized = [];
 
-  Helpers.queryElements('select.custom-select').forEach(function(element) {
-    initialized.push(CustomSelect.create(element));
-  });
+  for (var i = 0, elements = Helpers.queryElements('select.custom-select');
+      i < elements.length; i++)
+  {
+    initialized.push(CustomSelect.create(elements[i]));
+  }
 
   exports.initialized = initialized;
 
